@@ -1,0 +1,1551 @@
+/* ============================================
+   Jetly Web - Media Queries
+   Responsive Styles for All Devices
+   ============================================ */
+
+/* ============================================
+   Base Responsive Settings
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ============================================
+   Large Desktop (1400px and above)
+   ============================================ */
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text {
+        right: 25%;
+    }
+    
+    .service-main .container .service-inner .columns .parts {
+        padding: 40px 45px 35px;
+    }
+    
+    .offer-main .container .offer-inner .cols .text-block {
+        width: 82%;
+    }
+}
+
+/* ============================================
+   Desktop (1025px - 1399px)
+   ============================================ */
+@media only screen and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    /* Banner adjustments */
+    .home-banner-main .container .banner-inner .banner-text h2 {
+        font-size: 80px;
+        line-height: 75px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text {
+        right: 15%;
+        bottom: 25%;
+    }
+    
+    /* Service section */
+    .service-main .container .service-inner .columns .parts {
+        padding: 30px 25px 25px;
+    }
+    
+    /* Feature section */
+    .feature-main .container .feature-inner .column .part {
+        padding: 35px 30px 35px;
+    }
+    
+    /* Private jet section */
+    .private-main .container .private-inner .col-2 .image-content .item {
+        width: 320px;
+        margin-right: 20px;
+    }
+    
+    /* Offer section */
+    .offer-main .container .offer-inner .cols .icon-block {
+        right: 50px;
+    }
+    
+    /* Contact section */
+    .home-contact-main .container .contact-inner .col-2 .clients {
+        width: 300px;
+        padding: 20px 30px 20px;
+        left: 30%;
+    }
+}
+
+/* ============================================
+   Small Desktop / Large Tablet (769px - 1024px)
+   ============================================ */
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 750px;
+        padding: 0 20px;
+    }
+    
+    /* Header */
+    .header .outer-main .container .outer-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    
+    .header .outer-main .container .outer-inner .part-1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .outer-main .container .outer-inner .part-1 .logo {
+        margin: 0 auto;
+    }
+    
+    .header .outer-main .container .outer-inner .part-2 {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header .outer-main .container .outer-inner .part-2 .main-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header .outer-main .container .outer-inner .part-2 .main-menu li {
+        margin-left: 30px;
+    }
+    
+    .header .outer-main .container .outer-inner .part-2 .main-menu li a {
+        padding: 20px 0;
+        font-size: 13px;
+    }
+    
+    .header .outer-main .container .outer-inner .part-3 {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    /* Banner */
+    .home-banner-main .container .banner-inner .banner-text {
+        right: 10%;
+        bottom: 20%;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text h2 {
+        font-size: 60px;
+        line-height: 55px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text p {
+        font-size: 16px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text .banner-btn p {
+        padding: 12px 40px 12px;
+        font-size: 12px;
+    }
+    
+    /* Service Section */
+    .service-main {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    
+    .service-main .container .service-inner {
+        flex-wrap: wrap;
+    }
+    
+    .service-main .container .service-inner .columns {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .service-main .container .service-inner .columns .parts {
+        height: auto;
+        padding: 25px 20px 25px;
+    }
+    
+    /* Contact Section */
+    .home-contact-main {
+        padding: 80px 0 100px 0;
+    }
+    
+    .home-contact-main .container .contact-inner {
+        flex-direction: column;
+    }
+    
+    .home-contact-main .container .contact-inner .colums {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 {
+        width: 100%;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 .clients {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+    }
+    
+    .home-contact-main .container .contact-inner .colums .about-1 strong {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    /* Feature Section */
+    .feature-main {
+        padding-bottom: 60px;
+    }
+    
+    .feature-main .container .feature-inner {
+        flex-wrap: wrap;
+    }
+    
+    .feature-main .container .feature-inner .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .feature-main .container .feature-inner .column .part {
+        padding: 30px 25px 30px;
+    }
+    
+    .feature-main .container .feature-inner .cols {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    /* Booking Section */
+    .booking-main .booking-inner {
+        padding: 80px 0;
+    }
+    
+    .booking-main .booking-inner .content-part {
+        width: 100%;
+    }
+    
+    .booking-main .booking-inner .content-part .text-block strong {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .booking-main .booking-inner .content-part .form-part .wraper {
+        flex-direction: column;
+    }
+    
+    .booking-main .booking-inner .content-part .form-part .wraper .col-1,
+    .booking-main .booking-inner .content-part .form-part .wraper .col-2 {
+        width: 100%;
+    }
+    
+    .booking-main .booking-inner .content-part .form-part .wraper .col-1 p,
+    .booking-main .booking-inner .content-part .form-part .wraper .col-2 p {
+        padding: 0;
+    }
+    
+    .booking-main .booking-inner .content-part .form-part .wraper .col-2 .sub-wraper {
+        flex-direction: column;
+    }
+    
+    .booking-main .booking-inner .content-part .form-part .wraper .col-2 .book-btn {
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    
+    /* Offer Section */
+    .home-offer-main {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    
+    .home-offer-main .container .title p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .home-offer-main .container .offer-inner {
+        flex-wrap: wrap;
+    }
+    
+    .home-offer-main .container .offer-inner .cols {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    .home-offer-main .container .offer-inner .cols .text-block {
+        width: 90%;
+    }
+    
+    .home-offer-main .container .offer-inner .cols .icon-block {
+        right: 30px;
+    }
+    
+    /* Counter Section */
+    .counter-main .container .counter-inner .part {
+        flex-wrap: wrap;
+        padding: 40px 0 20px 0;
+    }
+    
+    .counter-main .container .counter-inner .part .cols {
+        width: 50%;
+        margin-bottom: 30px;
+        border-right: none;
+    }
+    
+    /* Customer Section */
+    .cust-main {
+        padding: 80px 0;
+    }
+    
+    .cust-main .container .title strong {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .cust-main .container .cust-inner {
+        flex-direction: column;
+    }
+    
+    .cust-main .container .cust-inner .cols {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    
+    .cust-main .container .cust-inner .cols:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Special Offer */
+    .special-main {
+        flex-direction: column;
+    }
+    
+    .special-main .main-1,
+    .special-main .main-2 {
+        width: 100%;
+    }
+    
+    .special-main .main-1 .content {
+        padding: 80px 30px 80px 30px;
+    }
+    
+    .special-main .main-1 .content .sec-1 p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .special-main .main-2 {
+        height: 400px;
+    }
+    
+    /* Private Jet Section */
+    .private-main {
+        padding: 80px 0;
+    }
+    
+    .private-main .container .private-inner {
+        flex-direction: column;
+    }
+    
+    .private-main .container .private-inner .col-1 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .private-main .container .private-inner .col-1 .content {
+        margin-right: 0;
+    }
+    
+    .private-main .container .private-inner .col-1 .content .sec-1 p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .private-main .container .private-inner .col-2 {
+        width: 100%;
+    }
+    
+    .private-main .container .private-inner .col-2 .image-content {
+        flex-wrap: wrap;
+    }
+    
+    .private-main .container .private-inner .col-2 .image-content .item {
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+    
+    .private-main .container .private-inner .col-2 .image-content .item:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    /* Destination Section */
+    .dest-main {
+        padding: 80px 0 60px 0;
+    }
+    
+    .dest-main .container .title p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .dest-main .container .dest-inner {
+        flex-wrap: wrap;
+    }
+    
+    .dest-main .container .dest-inner .cols {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .dest-main .container .dest-inner .cols .info-block {
+        width: 90%;
+    }
+    
+    /* Brand Section */
+    .brand-main .container .brand-inner .logo {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 60px 0 60px 0;
+    }
+    
+    /* News Section */
+    .home-news-main {
+        padding: 80px 0 60px 0;
+    }
+    
+    .home-news-main .container .title p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .home-news-main .container .news-inner .wraper-inner {
+        flex-wrap: wrap;
+    }
+    
+    .home-news-main .container .news-inner .wraper-inner .cols {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    /* Footer */
+    .footer .footer-top .footer-main .container .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer .footer-top .footer-main .container .footer-inner .text {
+        margin-bottom: 25px;
+    }
+    
+    .footer .footer-top .footer-main .container .footer-inner .text p {
+        font-size: 30px;
+    }
+    
+    .footer-middle .footer-mid-main .container .footer-mid-inner {
+        flex-wrap: wrap;
+    }
+    
+    .footer-middle .footer-mid-main .container .footer-mid-inner .col-1,
+    .footer-middle .footer-mid-main .container .footer-mid-inner .col-2 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .footer-bottom .footer-bot-main .container .footer-bot-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom .footer-bot-main .container .footer-bot-inner .col-1 {
+        margin-bottom: 20px;
+    }
+    
+    .footer-bottom .footer-bot-main .container .footer-bot-inner .col-2 .media-icons {
+        margin-top: 15px;
+    }
+    
+    /* About Page */
+    .abt-main {
+        padding: 80px 0 80px 0;
+    }
+    
+    .abt-main .container .abt-inner {
+        flex-direction: column;
+    }
+    
+    .abt-main .container .abt-inner .col-1,
+    .abt-main .container .abt-inner .col-2 {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .abt-main .container .abt-inner .col-2 .abt-1 strong {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .cunt-main .container .cunt-inner {
+        flex-wrap: wrap;
+    }
+    
+    .cunt-main .container .cunt-inner .items {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    .cunt-main .container .cunt-inner .items::before {
+        display: none;
+    }
+    
+    /* Team Section */
+    .team-main {
+        padding: 80px 0 60px 0;
+    }
+    
+    .team-main .container .title strong {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .team-main .container .team-inner {
+        flex-wrap: wrap;
+    }
+    
+    .team-main .container .team-inner .cols {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    /* Services Page */
+    .offer-main {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    
+    .offer-main .container .offer-inner .cols {
+        width: 50%;
+    }
+    
+    /* Shop Page */
+    .product-main {
+        padding: 80px 0;
+    }
+    
+    .product-main .container .product-inner .wraper-inner {
+        flex-direction: column;
+    }
+    
+    .product-main .container .product-inner .wraper-inner .col-1 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .product-main .container .product-inner .wraper-inner .col-2 {
+        width: 100%;
+    }
+    
+    .product-main .container .product-inner .wraper-inner .col-2 .division .part {
+        width: 50%;
+    }
+    
+    /* News Page */
+    .news-main {
+        padding: 80px 0 60px 0;
+    }
+    
+    .news-main .container .title p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .news-main .container .news-inner .wraper-inner .cols {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    /* Contact Page */
+    .contact-main {
+        padding: 80px 0 60px 0;
+    }
+    
+    .contact-main .container .title p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .contact-main .container .contact-inner {
+        flex-wrap: wrap;
+    }
+    
+    .contact-main .container .contact-inner .cols {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .form-main {
+        padding-bottom: 80px;
+    }
+    
+    .form-main .container .form-inner .part-1 .wraper {
+        flex-direction: column;
+    }
+    
+    .form-main .container .form-inner .part-1 .wraper .col {
+        width: 100%;
+    }
+    
+    /* Banner Pages */
+    .about-banner-main .banner-inner .text,
+    .service-banner-main .banner-inner .text,
+    .shop-banner-main .banner-inner .text,
+    .news-banner-main .banner-inner .text,
+    .contact-banner-main .banner-inner .text {
+        padding: 150px 0px;
+    }
+    
+    .about-banner-main .banner-inner .text p,
+    .service-banner-main .banner-inner .text p,
+    .shop-banner-main .banner-inner .text p,
+    .news-banner-main .banner-inner .text p,
+    .contact-banner-main .banner-inner .text p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    /* Scrolltop */
+    .scrolltop {
+        width: 45px;
+        height: 45px;
+        left: 88%;
+    }
+}
+
+/* ============================================
+   Tablet (481px - 768px)
+   ============================================ */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+    
+    /* Header */
+    .header .outer-main .container .outer-inner .part-2 .main-menu {
+        display: none;
+    }
+    
+    .header .outer-main .container .outer-inner .part-3 .search-cart .cart-icons .icon {
+        font-size: 36px;
+        padding-left: 15px;
+    }
+    
+    /* Banner */
+    .home-banner-main .container .banner-inner .banner-text {
+        right: 5%;
+        bottom: 15%;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text h2 {
+        font-size: 40px;
+        line-height: 38px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text p {
+        font-size: 14px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text .banner-btn p {
+        padding: 10px 30px 10px;
+        font-size: 11px;
+    }
+    
+    /* Service Section */
+    .service-main {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .service-main .container .service-inner .columns {
+        width: 100%;
+    }
+    
+    .service-main .container .service-inner .columns .parts {
+        padding: 20px 15px 20px;
+    }
+    
+    .service-main .container .service-inner .columns .parts .text {
+        font-size: 16px;
+    }
+    
+    /* Contact Section */
+    .home-contact-main {
+        padding: 60px 0 80px 0;
+    }
+    
+    .home-contact-main .container .contact-inner .colums .about-1 strong {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 .clients {
+        width: 240px;
+        padding: 15px 20px 15px;
+        left: 50%;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 .clients {
+        font-size: 48px;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 .clients .client-count p {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    /* Feature Section */
+    .feature-main {
+        padding-bottom: 40px;
+    }
+    
+    .feature-main .container .feature-inner .column {
+        width: 100%;
+    }
+    
+    .feature-main .container .feature-inner .cols {
+        width: 100%;
+    }
+    
+    .feature-main .container .feature-inner .column .part strong {
+        font-size: 24px;
+    }
+    
+    /* Booking Section */
+    .booking-main .booking-inner {
+        padding: 60px 0;
+    }
+    
+    .booking-main .booking-inner .content-part .text-block strong {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .booking-main .booking-inner .content-part .form-part .wraper .col-1 p input,
+    .booking-main .booking-inner .content-part .form-part .wraper .col-2 p input {
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Offer Section */
+    .home-offer-main {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .home-offer-main .container .title p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .home-offer-main .container .offer-inner .cols {
+        width: 100%;
+    }
+    
+    .home-offer-main .container .offer-inner .cols .text-block {
+        width: 85%;
+    }
+    
+    /* Counter Section */
+    .counter-main .container .counter-inner .part .cols {
+        width: 50%;
+    }
+    
+    .counter-main .container .counter-inner .part .cols .icon {
+        font-size: 48px;
+    }
+    
+    .counter-main .container .counter-inner .part .cols .text span {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    /* Customer Section */
+    .cust-main {
+        padding: 60px 0;
+    }
+    
+    .cust-main .container .title strong {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .cust-main .container .cust-inner .cols .part {
+        padding: 30px 30px 30px 80px;
+        margin-left: 30px;
+    }
+    
+    .cust-main .container .cust-inner .cols .customer-img {
+        left: 15px;
+    }
+    
+    .cust-main .container .cust-inner .cols .comma {
+        left: 15px;
+        top: 80px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .cust-main .container .cust-inner .cols .comma .icon {
+        font-size: 24px;
+    }
+    
+    .cust-main .container .cust-inner .cols .part p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    /* Special Offer */
+    .special-main .main-1 .content {
+        padding: 60px 20px 60px 20px;
+    }
+    
+    .special-main .main-1 .content .sec-1 p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .special-main .main-2 {
+        height: 300px;
+    }
+    
+    .special-main .main-2 .rotet-block {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .special-main .main-2 .rotet-block p {
+        font-size: 16px;
+    }
+    
+    /* Private Jet */
+    .private-main {
+        padding: 60px 0;
+    }
+    
+    .private-main .container .private-inner .col-1 .content .sec-1 p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .private-main .container .private-inner .col-2 .image-content .item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    /* Destination Section */
+    .dest-main {
+        padding: 60px 0 40px 0;
+    }
+    
+    .dest-main .container .title p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .dest-main .container .dest-inner .cols .info-block {
+        width: 90%;
+        padding: 20px 25px 20px;
+    }
+    
+    .dest-main .container .dest-inner .cols .info-block .name {
+        font-size: 20px;
+    }
+    
+    /* News Section */
+    .home-news-main {
+        padding: 60px 0 40px 0;
+    }
+    
+    .home-news-main .container .title p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .home-news-main .container .news-inner .wraper-inner .cols .part .text {
+        padding: 20px 25px 20px;
+    }
+    
+    .home-news-main .container .news-inner .wraper-inner .cols .part .text .content {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    /* Footer */
+    .footer .footer-top .footer-main .container .footer-inner .text p {
+        font-size: 24px;
+    }
+    
+    .footer-middle .footer-mid-main .container .footer-mid-inner {
+        padding: 60px 0;
+    }
+    
+    /* About Page */
+    .abt-main {
+        padding: 60px 0 60px 0;
+    }
+    
+    .abt-main .container .abt-inner .col-2 .abt-1 strong {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .cunt-main .container .cunt-inner .items {
+        width: 50%;
+    }
+    
+    .cunt-main .container .cunt-inner .items strong {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    /* Team Section */
+    .team-main {
+        padding: 60px 0 40px 0;
+    }
+    
+    .team-main .container .title strong {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .team-main .container .team-inner .cols .part .content {
+        padding-top: 25px;
+        padding-left: 30px;
+    }
+    
+    .team-main .container .team-inner .cols .part .content strong {
+        font-size: 22px;
+    }
+    
+    /* Services Page */
+    .offer-main {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .offer-main .container .title p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .offer-main .container .offer-inner .cols {
+        width: 100%;
+    }
+    
+    /* Shop Page */
+    .product-main {
+        padding: 60px 0;
+    }
+    
+    .product-main .container .product-inner .wraper-inner .col-2 .division .part {
+        width: 100%;
+    }
+    
+    .product-main .container .product-inner .wraper-inner .col-2 .result {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .product-main .container .product-inner .wraper-inner .col-2 .result .sorting {
+        width: 100%;
+    }
+    
+    /* News Page */
+    .news-main {
+        padding: 60px 0 40px 0;
+    }
+    
+    .news-main .container .title p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .news-main .container .news-inner .wraper-inner .cols {
+        width: 100%;
+    }
+    
+    /* Contact Page */
+    .contact-main {
+        padding: 60px 0 40px 0;
+    }
+    
+    .contact-main .container .title p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .contact-main .container .contact-inner .cols .content {
+        padding: 30px 25px 30px;
+    }
+    
+    .contact-main .container .contact-inner .cols .content .details {
+        flex-direction: column;
+    }
+    
+    .contact-main .container .contact-inner .cols .content .details .icon {
+        font-size: 40px;
+        margin-top: 15px;
+    }
+    
+    /* Form */
+    .form-main .container .form-inner .part-1 .wraper .col .content p input {
+        height: 50px;
+    }
+    
+    .form-main .container .form-inner .part-2 .content textarea {
+        height: 120px;
+    }
+    
+    /* Banner Pages */
+    .about-banner-main .banner-inner .text,
+    .service-banner-main .banner-inner .text,
+    .shop-banner-main .banner-inner .text,
+    .news-banner-main .banner-inner .text,
+    .contact-banner-main .banner-inner .text {
+        padding: 120px 0px;
+    }
+    
+    .about-banner-main .banner-inner .text p,
+    .service-banner-main .banner-inner .text p,
+    .shop-banner-main .banner-inner .text p,
+    .news-banner-main .banner-inner .text p,
+    .contact-banner-main .banner-inner .text p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    /* Login Page */
+    .center .login_form {
+        padding: 30px 20px;
+        margin: 20px 15px;
+    }
+    
+    .center .login_form .login_option {
+        flex-direction: column;
+    }
+    
+    .center .login_form .login_option .option {
+        width: 100%;
+    }
+    
+    .center .login_form .login_option .option a {
+        margin: 20px 0 15px 0;
+    }
+    
+    /* Scrolltop */
+    .scrolltop {
+        width: 40px;
+        height: 40px;
+        left: 85%;
+    }
+    
+    .scrolltop .icon {
+        font-size: 24px;
+    }
+}
+
+/* ============================================
+   Mobile (320px - 480px)
+   ============================================ */
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    /* Header */
+    .header .outer-main .container {
+        padding: 0 10px;
+    }
+    
+    .header .outer-main .container .outer-inner {
+        padding: 10px 0;
+    }
+    
+    .header .outer-main .container .outer-inner .part-1 .logo {
+        width: 100px;
+    }
+    
+    .header .outer-main .container .outer-inner .part-3 .search-cart .cart-icons {
+        padding: 5px 0;
+    }
+    
+    .header .outer-main .container .outer-inner .part-3 .search-cart .cart-icons .icon {
+        font-size: 28px;
+        padding-left: 10px;
+    }
+    
+    /* Banner */
+    .home-banner-main .container .banner-inner .banner-text {
+        right: 0;
+        left: 0;
+        bottom: 10%;
+        transform: none;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text h2 {
+        font-size: 28px;
+        line-height: 26px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .home-banner-main .container .banner-inner .banner-text .banner-btn p {
+        padding: 8px 20px 8px;
+        font-size: 10px;
+    }
+    
+    /* Service Section */
+    .service-main {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .service-main .container .service-inner {
+        flex-direction: column;
+    }
+    
+    .service-main .container .service-inner .columns {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .service-main .container .service-inner .columns .parts {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .service-main .container .service-inner .columns .parts .icon .icon {
+        font-size: 40px;
+    }
+    
+    .service-main .container .service-inner .columns .parts .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    /* Contact Section */
+    .home-contact-main {
+        padding: 40px 0 60px 0;
+    }
+    
+    .home-contact-main .container .contact-inner .colums .about-1 span {
+        font-size: 14px;
+    }
+    
+    .home-contact-main .container .contact-inner .colums .about-1 strong {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 .clients {
+        width: 200px;
+        padding: 12px 15px 12px;
+        left: 50%;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 .clients {
+        font-size: 36px;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 .clients .client-count p {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    .home-contact-main .container .contact-inner .col-2 .clients .client-count span {
+        font-size: 12px;
+    }
+    
+    .home-contact-main .container .contact-inner .colums .about-4 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .home-contact-main .container .contact-inner .colums .about-4 .disc-btn p {
+        padding: 12px 40px 12px;
+        font-size: 12px;
+    }
+    
+    .home-contact-main .container .contact-inner .colums .about-4 .phone {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    
+    /* Feature Section */
+    .feature-main {
+        padding-bottom: 30px;
+    }
+    
+    .feature-main .container .feature-inner {
+        flex-direction: column;
+    }
+    
+    .feature-main .container .feature-inner .column,
+    .feature-main .container .feature-inner .cols {
+        width: 100%;
+    }
+    
+    .feature-main .container .feature-inner .column .part {
+        padding: 20px 15px 20px;
+    }
+    
+    .feature-main .container .feature-inner .column .part strong {
+        font-size: 20px;
+    }
+    
+    .feature-main .container .feature-inner .column .part .text-para {
+        padding: 15px 0 20px 0;
+        font-size: 14px;
+    }
+    
+    .feature-main .container .feature-inner .column .part .disc-btn p {
+        padding: 12px 40px 12px;
+        font-size: 12px;
+    }
+    
+    .feature-main .container .feature-inner .cols .content {
+        bottom: 30px;
+        left: 30px;
+        font-size: 20px;
+    }
+    
+    /* Booking Section */
+    .booking-main .booking-inner {
+        padding: 40px 0;
+    }
+    
+    .booking-main .booking-inner .content-part .text-block span {
+        font-size: 14px;
+    }
+    
+    .booking-main .booking-inner .content-part .text-block strong {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .booking-main .booking-inner .content-part .form-part .wraper .col-1 p input,
+    .booking-main .booking-inner .content-part .form-part .wraper .col-2 p input {
+        height: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 13px;
+    }
+    
+    .booking-main .booking-inner .content-part .form-part .wraper .col-2 .book-btn span p {
+        padding: 12px 30px 12px;
+        font-size: 12px;
+    }
+    
+    /* Offer Section */
+    .home-offer-main {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .home-offer-main .container .title {
+        margin-bottom: 30px;
+    }
+    
+    .home-offer-main .container .title span {
+        font-size: 14px;
+    }
+    
+    .home-offer-main .container .title p {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .home-offer-main .container .offer-inner {
+        flex-direction: column;
+    }
+    
+    .home-offer-main .container .offer-inner .cols {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    
+    .home-offer-main .container .offer-inner .cols .text-block {
+        width: 90%;
+        padding: 20px 20px 20px;
+        margin-top: -30px;
+    }
+    
+    .home-offer-main .container .offer-inner .cols .text-block .heading span {
+        font-size: 11px;
+    }
+    
+    .home-offer-main .container .offer-inner .cols .text-block .heading strong {
+        font-size: 20px;
+    }
+    
+    .home-offer-main .container .offer-inner .cols .icon-block {
+        right: 25px;
+        top: 40%;
+        height: 35px;
+        width: 35px;
+    }
+    
+    /* Counter Section */
+    .counter-main .container .counter-inner .part {
+        flex-direction: column;
+        padding: 30px 0 10px 0;
+    }
+    
+    .counter-main .container .counter-inner .part .cols {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .counter-main .container .counter-inner .part .cols .icon {
+        font-size: 40px;
+    }
+    
+    .counter-main .container .counter-inner .part .cols .text span {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    
+    .counter-main .container .counter-inner .part .cols .text p {
+        font-size: 16px;
+    }
+    
+    /* Customer Section */
+    .cust-main {
+        padding: 40px 0;
+    }
+    
+    .cust-main .container .title span {
+        font-size: 14px;
+    }
+    
+    .cust-main .container .title strong {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .cust-main .container .cust-inner .cols {
+        margin-bottom: 60px;
+    }
+    
+    .cust-main .container .cust-inner .cols .part {
+        padding: 60px 20px 25px 20px;
+        margin-left: 0;
+    }
+    
+    .cust-main .container .cust-inner .cols .customer-img {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .cust-main .container .cust-inner .cols .customer-img img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .cust-main .container .cust-inner .cols .comma {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 45px;
+        width: 45px;
+    }
+    
+    .cust-main .container .cust-inner .cols .comma .icon {
+        font-size: 20px;
+    }
+    
+    .cust-main .container .cust-inner .cols .part p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+    .cust-main .container .cust-inner .cols .part .rating {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cust-main .container .cust-inner .cols .part .rating .name {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    /* Special Offer */
+    .special-main {
+        flex-direction: column;
+    }
+    
+    .special-main .main-1 {
+        width: 100%;
+    }
+    
+    .special-main .main-1 .content {
+        padding: 40px 15px 40px 15px;
+    }
+    
+    .special-main .main-1 .content .sec-1 span {
+        font-size: 14px;
+    }
+    
+    .special-main .main-1 .content .sec-1 p {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .special-main .main-1 .content .sec-2 p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .special-main .main-1 .content .sec-3 span p {
+        padding: 12px 30px 12px;
+        font-size: 12px;
+    }
+    
+    .special-main .main-2 {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .special-main .main-2 .rotet-block {
+        height: 80px;
+        width: 80px;
+        top: 55%;
+    }
+    
+    .special-main .main-2 .rotet-block p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    /* Private Jet */
+    .private-main {
+        padding: 40px 0;
+    }
+    
+    .private-main .container .private-inner .col-1 .content .sec-1 span {
+        font-size: 14px;
+    }
+    
+    .private-main .container .private-inner .col-1 .content .sec-1 p {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .private-main .container .private-inner .col-1 .sec-2 p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .private-main .container .private-inner .col-1 .sec-3 .btns {
+        flex-direction: column;
+    }
+    
+    .private-main .container .private-inner .col-1 .sec-3 .btns .icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .private-main .container .private-inner .col-2 .image-content .item {
+        width: 100%;
+    }
+    
+    .private-main .container .private-inner .col-2 .image-content .item .part-1 .sec-1 {
+        padding: 12px 30px 12px;
+        font-size: 16px;
+    }
+    
+    .private-main .container .private-inner .col-2 .image-content .item .part-1 .sec-3 span p {
+        padding: 12px 40px 12px;
+        font-size: 12px;
+    }
+    
+    /* Destination Section */
+    .dest-main {
+        padding: 40px 0 30px 0;
+    }
+    
+    .dest-main .container .title {
+        padding-bottom: 30px;
+    }
+    
+    .dest-main .container .title span {
+        font-size: 14px;
+    }
+    
+    .dest-main .container .title p {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .dest-main .container .dest-inner {
+        flex-direction: column;
+    }
+    
+    .dest-main .container .dest-inner .cols {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    
+    .dest-main .container .dest-inner .cols .info-block {
+        width: 92%;
+        padding: 15px 20px 15px;
+        left: 4%;
+    }
+    
+    .dest-main .container .dest-inner .cols .info-block .name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .dest-main .container .dest-inner .cols .info-block .time-block {
+        flex-direction: column;
+    }
+    
+    /* Brand Section */
+    .brand-main .container .brand-inner .logo {
+        flex-direction: column;
+        padding: 40px 0 40px 0;
+    }
+    
+    /* News Section */
+    .home-news-main {
+        padding
+        : 40px 0 30px 0;
+    }
+}
