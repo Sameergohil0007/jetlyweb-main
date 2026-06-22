@@ -14,29 +14,29 @@ import ScrollTop from './scrolltop/scroll';
 import Login from './login/login';
 import Register from './login/registration/registration';
 import Verify from './login/registration/verify';
-import Otp from './login/otp';
+import { AuthProvider } from './context/AuthContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <BrowserRouter>
-      <Header />
-      <ScrollTop />
-      <Routes>
-        <Route path="/" element={<HomeComponents />} />
-        <Route path="/about" element={<AboutComponents />} />
-        <Route path="/service" element={<ServiceComponents />} />
-        <Route path="/news" element={<NewsComponents />} />
-        <Route path="/shop" element={<ShopComponents />} />
-        <Route path="/contact" element={<ContactComponents />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/forget" element={<Verify />} />
-        <Route path="/otp" element={<Otp />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Header />
+        <ScrollTop />
+        <Routes>
+          <Route path="/" element={<HomeComponents />} />
+          <Route path="/about" element={<AboutComponents />} />
+          <Route path="/service" element={<ServiceComponents />} />
+          <Route path="/news" element={<NewsComponents />} />
+          <Route path="/shop" element={<ShopComponents />} />
+          <Route path="/contact" element={<ContactComponents />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forget" element={<Verify />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </AuthProvider>
   </>
 );
-

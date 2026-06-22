@@ -25,3 +25,4 @@ yarn-error.log*
 
 # installer files
 *.msi
+.vercel

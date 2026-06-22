@@ -1,10 +1,31 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { BsCart } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
+import { logOut } from "../firebase/auth";
 
 
 const Header = () => {
+    const { user } = useAuth();
+    const navigate = useNavigate();
+
+    const handleLogout = async () => {
+        try {
+            await logOut();
+            navigate("/login");
+        } catch (err) {
+            console.error("Logout error:", err);
+        }
+    };
+
+    // Get user initials or first letter
+    const getUserInitial = () => {
+        if (user?.displayName) return user.displayName.charAt(0).toUpperCase();
+        if (user?.email) return user.email.charAt(0).toUpperCase();
+        return "U";
+    };
+
     return (
         <>
             <div className="header">
@@ -115,7 +136,51 @@ const Header = () => {
                                         <Link to="/contact">contact</Link>
                                     </li>
                                     <li>
-                                        <Link to="/login">login</Link>
+                                        {user ? (
+                                            <div className="header-user-menu" style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
+                                                {user.photoURL ? (
+                                                    <img
+                                                        src={user.photoURL}
+                                                        alt="avatar"
+                                                        style={{
+                                                            width: '32px',
+                                                            height: '32px',
+                                                            borderRadius: '50%',
+                                                            objectFit: 'cover',
+                                                            border: '2px solid #6366f1'
+                                                        }}
+                                                    />
+                                                ) : (
+                                                    <div style={{
+                                                        width: '32px',
+                                                        height: '32px',
+                                                        borderRadius: '50%',
+                                                        background: 'linear-gradient(135deg, #6366f1, #a855f7)',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        color: '#fff',
+                                                        fontSize: '14px',
+                                                        fontWeight: '600',
+                                                        fontFamily: 'Inter, sans-serif'
+                                                    }}>
+                                                        {getUserInitial()}
+                                                    </div>
+                                                )}
+                                                <span
+                                                    onClick={handleLogout}
+                                                    style={{
+                                                        color: 'inherit',
+                                                        fontSize: 'inherit',
+                                                        cursor: 'pointer'
+                                                    }}
+                                                >
+                                                    Logout
+                                                </span>
+                                            </div>
+                                        ) : (
+                                            <Link to="/login">Login</Link>
+                                        )}
                                     </li>
                                 </ul>
                             </div>
